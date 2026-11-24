@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="#F7F2F7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dp">
+            </LinearLayout>
+
+            <!-- LOGOTIPO + TEXTO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/logo_audio_coppel"
+                    android:src="@drawable/logocop"
+                    app:srcCompat="@drawable/logocop" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/audio_coppel"
+                    android:textColor="#021693"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- DESCRIPCIÓN -->
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/descripcion_coppel"
+                android:textColor="#031583"
+                android:textSize="13sp" />
+
+            <!-- Canción 1 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play1" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion1" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share1" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue1" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 2 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play2" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion2" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share2" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue2" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 3 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play3" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion3" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share3" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue3" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 4 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play4" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion4" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share4" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue4" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 5 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play5" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion5" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share5" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue5" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 6 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play6" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion6" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share6" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue6" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 7 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play7" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion7" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share7" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue7" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 8 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play8" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion8" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share8" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue8" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 9 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play9" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion9" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share9" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue9" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+            <!-- Canción 10 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <ImageButton android:id="@+id/play10" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/play" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/reproducir_cancion" />
+                <TextView android:id="@+id/cancion10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="@string/cancion10" android:textColor="#000000" android:textSize="13sp" />
+                <ImageButton android:id="@+id/share10" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="6dp" android:background="@android:color/transparent" android:src="@drawable/share" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/compartir_cancion" />
+                <ImageButton android:id="@+id/blue10" android:layout_width="34dp" android:layout_height="34dp" android:background="@android:color/transparent" android:src="@drawable/blue" android:scaleType="centerInside" android:padding="0dp" android:contentDescription="@string/enviar_bluetooth" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
